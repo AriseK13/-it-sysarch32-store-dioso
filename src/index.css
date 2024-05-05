@@ -1,0 +1,180 @@
+body {
+  background-image: url('https://st.depositphotos.com/66391244/55820/v/450/depositphotos_558203046-stock-illustration-seamless-pattern-sport-shoe-nike.jpg');
+}
+
+.products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  /* Existing styles for product cards */
+  border: 4px solid skyblue;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  /* Hover effect for product cards */
+  transform: translateY(-5px);
+  border-color: #CC7722; /* Change border color on hover */
+}
+
+.product-buttons button{
+  /* Existing styles for product buttons */
+  margin: 0 4px;
+  display: inline-block;
+  transition: background-color 0.3s ease; /* Add transition for smooth effect */
+  background-color: #DEB887; /* Set default background color to brown */
+  padding: 12px 24px; /* Increase padding for larger buttons */
+  font-size: 18px; /* Increase font size for larger buttons */
+  color: black;
+  border-color: royalblue;
+}
+
+.product-buttons button:hover{
+  /* Hover effect for buttons */
+  background-color: #CC7722; /* Change background color on hover */
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.product-details {
+  padding: 12px;
+  background-color: skyblue;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: #DEB887;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: skyblue;
+  font-size: 24px;
+}
+
+.close:hover {
+  color: royalblue;
+}
+
+
+/* CSS for Cart component */
+.containers {
+  margin-top: 180px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.list-group-item {
+  padding: 20px;
+  border-radius: 25px;
+  background-color: skyblue; /* Add background color of skyblue */
+}
+
+.list-group-item img {
+  width: 50%;
+  border-radius: 50px;
+  background-color: skyblue; /* Add background color of skyblue */
+  border: 2px solid royalblue;
+}
+
+.btn-danger {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #DEB887; /* Change default background color to #DEB887 */
+  color: black; /* Change default text color to black */
+  border-color: skyblue; /* Change border color to sky blue */
+  padding: 12px 24px; /* Increase padding for larger buttons */
+  font-size: 18px; /* Increase font size for larger buttons */
+}
+
+.btn-danger:hover {
+  background-color: #CC7722;
+  color: black;
+  border-color: skyblue;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: skyblue; /* Add background color of skyblue */
+  border: 2px solid burlywood;
+  font-size: larger;
+}
+
+.card-body p {
+  margin-bottom: 5px;
+  background-color: skyblue; /* Add background color of skyblue */
+}
+
+.card-body button {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #DEB887;
+  color: black; /* Change default text color to black */
+  border-color: royalblue; /* Change border color to sky blue */
+  display: block; /* Add display block to make the button a block-level element */
+  margin: 0 auto; /* Add margin: 0 auto to center the button horizontally */
+  padding: 12px 24px; /* Increase padding for larger buttons */
+  font-size: 18px; /* Increase font size for larger buttons */  
+}
+
+.card-body button:hover{
+  background-color: #CC7722;
+  color: black;
+  border-color: royalblue;
+}
+
+.card-body p:last-child {
+  font-weight: bold;
+  font-size: 18px;
+  background-color: skyblue; /* Add background color of skyblue */
+}
+
+.card-body button {
+  width: 60%;
+}
