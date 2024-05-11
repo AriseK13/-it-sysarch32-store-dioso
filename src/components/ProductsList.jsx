@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { db } from "../config/firebase-config";
+import { loadStripe } from '@stripe/stripe-js';
+
+// Load the Stripe.js library with your publishable API key
+const stripePromise = loadStripe('pk_test_51PF3bl066yqkLG8RYxiRV0YScVdjHPvBUA5lw5CcLH5gmoaokyavlaT0q9UwEa6lfCBmkYQ03UwS5QooSVFFrUM700IwNykoKT'); // Replace with your publishable key
 import {
   collection,
   getDocs,
